@@ -1,7 +1,7 @@
 // Função para obter o último cliente do backend
 async function obterCliente() {
     try {
-        const response = await fetch('https://d5ef-170-238-198-85.ngrok-free.app/api/clientes/ultimo');
+        const response = await fetch('http://localhost:3000/api/clientes/ultimo');
         if (!response.ok) {
             throw new Error(`Erro HTTP! status: ${response.status}`);
         }
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const { nomeCliente, numeroMesa } = cliente;
         
             // Notifica o gerente
-            fetch('https://d5ef-170-238-198-85.ngrok-free.app/notificacao', {
+            fetch('http://localhost:3000/notificacao', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -57,7 +57,7 @@ document.getElementById('chamar-garcom').addEventListener('click', async () => {
     const { nomeCliente, numeroMesa } = cliente;
 
     // Notifica o garçom
-    fetch('https://d5ef-170-238-198-85.ngrok-free.app/notificacao', {
+    fetch('http://localhost:3000/notificacao', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -86,7 +86,7 @@ document.getElementById('pedido-sistema').addEventListener('click', async () => 
     const { nomeCliente } = cliente;
 
     // Notifica o garçom sobre a mudança
-    fetch('https://d5ef-170-238-198-85.ngrok-free.app/notificacao', {
+    fetch('http://localhost:3000/notificacao', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
