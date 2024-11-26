@@ -1,0 +1,554 @@
+/* estilos globais */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
+    background-color: #fff; /* Fundo branco */
+}
+
+header{
+    max-width: 360px;
+    margin: auto;
+}
+
+main {
+    padding: 20px;
+    max-width: 330px;
+    margin: auto;
+}
+
+main h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-out-hidden {
+    opacity: 0;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.close-button {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.modal button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.modal button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal button:hover {
+    background-color: darkorange;
+}
+
+/* index */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 28px;
+    color: #333;
+}
+
+
+form input {
+    color: #707070;
+    padding: 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1.5px solid #ddd;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out;
+}
+
+form input[type="text"] {
+    width: 85%;
+}
+
+form input[type="number"] {
+    width: 20%;
+}
+
+form input:focus {
+    border-bottom: 2px solid #ffa500; /* Cor laranja para o foco */
+}
+
+.submit-button {
+    align-self: center;
+    width: 70%;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #ffa500; /* Cor laranja */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 60%;
+}
+
+.submit-button:hover {
+    background-color: #e69500; /* Tom mais escuro */
+}
+/* fim index */
+
+/* escolha */
+
+.logo-header{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.logo-header img {
+    height: 150px;
+    width: 150px;
+}
+
+.escolha-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.escolha-main img {
+    width: 80px;
+    height: 80px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    width: 160px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer .language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+footer p{
+    margin: 0;
+}
+
+/* fim escolha */
+
+/* Carpádio */
+
+.combo-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.nossos-combos{
+    display: flex;
+    gap: 10px;
+    align-self: flex-end;
+}
+
+.nossos-combos>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+}
+
+.nossos-combos button{
+    background-color: #da891f;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    padding: 4px;
+    width: 70px;
+    height: 25px;
+    font-size: 11px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.nossos-combos button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+    padding-right: 15px;
+    border-right: solid 1px #7a7a7a59;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.205);
+    transition: transform 0.2s;
+    padding: 5px;
+    height: 55px;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category img {
+    width: 30px;
+    height: 30px;
+}
+
+.category p{
+    font-size: 8px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.combos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.combo {
+    background-color: #f4f4f4;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.205);
+    text-align: center;
+    transition: transform 0.2s;
+    height: 100px;
+    width: 85px;
+}
+
+.combo:hover {
+    transform: scale(1.05);
+}
+
+.combo img {
+    width: 60px;
+    height: 60px;
+}
+
+.combo h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.combo p {
+    margin: 5px 0 0;
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+footer.resumo-pedido {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+}
+
+.resumo-pedido button{
+    align-self: center;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ffa500; /* Cor laranja */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.item-soma{
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start; 
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+.item-soma span{
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+/* fim cardapio */
+
+/* finalizar */
+
+/* Pedido item */
+
+.pedido-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    gap: 10px;
+}
+
+.quantidade-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botões de quantidade */
+.quantidade-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 22px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Botão de diminuir */
+.quantidade-btn.diminuir {
+    background-color: #f4f4f4;
+    color: #7a7a7a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão de aumentar */
+.quantidade-btn.aumentar {
+    background-color: #ffa500;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeitos ao passar o mouse */
+.quantidade-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.pedido-item .quantidade {
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.pedido-item .nome-item {
+    flex: 1;
+    font-size: 16px;
+}
+
+.pedido-item .preco-item {
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+
+.pedido-item .editar-btn:hover {
+    background-color: #e69500;
+}
+
+/* Resumo */
+.finalizar-footer{
+    margin-top: 100%;
+}
+
+.resumo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.resumo-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.resumo .continuar-btn {
+    width: 150px;
+    background-color: #f4f4f4;
+    border: none;
+    color: #7a7a7a;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resumo .total {
+    text-align: right;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.resumo .total>span {
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+.resumo .total .total-valor {
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+}
+
+.resumo .finalizar-btn {
+    width: 150px;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 12px;
+    font-size: 11px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resumo .finalizar-btn:hover {
+    background-color: #e69500;
+}
+
+/* fim finalizar */
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    main .option {
+        height: 140px;
+        width: 140px;
+    }
+    
+    footer {
+        flex-direction: row;
+    }
+}
+
+/* Responsividade adicional para telas muito pequenas */
+@media (max-width: 480px) {
+    main img {
+        width: 70px;
+        height: 70px;
+    }
+
+    main h1 {
+        font-size: 20px;
+    }
+
+    .option {
+        height: 120px;
+        width: 120px;
+    }
+
+    footer img {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="fade-out">
+    <header class="logo-header">
+        <img src="https://images.vexels.com/content/129606/preview/burger-logo-00d0ae.png" alt="Logo do restaurante">
+    </header>
+    <main class="escolha-main">
+        <h1>ESCOLHA</h1>
+        <div class="flex-bt option" id="olhar-cardapio">
+            <h4>Olhar Cardápio</h4>
+            <img src="img/menu.png" alt="Ícone de cardápio">
+        </div>
+        <div class="flex-bt option" id="chamar-garcom">
+            <h4>Chamar Garçom</h4>
+            <img src="img/garcom.png" alt="Ícone de garçom">
+        </div>
+    </main>
+    <footer>
+        <div class="language">
+            <img src="img/united-states.png" alt="Bandeira dos EUA">
+            <p>Inglês</p>
+        </div>
+        <div class="language">
+            <img src="img/brazil.png" alt="Bandeira do Brasil">
+            <p>Português</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <p id="modal-message"></p>
+            <button id="pedido-sistema">Clique aqui</button>
+        </div>
+    </div>
+
+    <script src="js/escolha.js"></script>
+</body>
+
+</html>

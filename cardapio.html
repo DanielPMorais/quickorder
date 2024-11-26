@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fade-out">
+    <header style="background-image: url('img/banner.png'); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100px;">
+    </header>
+    <main class="combo-main">
+        <div class="nossos-combos">
+            <h1>NOSSOS COMBOS</h1>
+            <div>
+                <button id="voltar-escolha">Voltar</button>
+            </div>
+        </div>
+        <section class="menu">
+            <aside class="categories">
+                <div class="category">
+                    <img src="img/hamburguer.png" alt="Hambúrgueres">
+                    <p>Hambúrgueres</p>
+                </div>
+                <div class="category">
+                    <img src="img/refri.png" alt="Bebidas">
+                    <p>Bebidas</p>
+                </div>
+                <div class="category">
+                    <img src="img/fritas.png" alt="Acompanhamentos">
+                    <p>Acomp.</p>
+                </div>
+                <div class="category">
+                    <img src="img/kids.png" alt="Kids">
+                    <p>Kids</p>
+                </div>
+                <div class="category">
+                    <img src="img/sobremesa.png" alt="Sobremesas">
+                    <p>Sobremesas</p>
+                </div>
+            </aside>
+            <div class="combos">
+                <div class="combo">
+                    <img src="img/combo.png" alt="Combo 1">
+                    <h4>Combo 1</h4>
+                    <p>R$ 39.99</p>
+                </div>
+                <div class="combo">
+                    <img src="img/combo.png" alt="Combo 2">
+                    <h4>Combo 2</h4>
+                    <p>R$ 39.99</p>
+                </div>
+                <div class="combo">
+                    <img src="img/combo.png" alt="Combo 3">
+                    <h4>Combo 3</h4>
+                    <p>R$ 39.99</p>
+                </div>
+                <div class="combo">
+                    <img src="img/combo.png" alt="Combo 4">
+                    <h4>Combo 4</h4>
+                    <p>R$ 39.99</p>
+                </div>
+                <div class="combo">
+                    <img src="img/combo.png" alt="Combo 5">
+                    <h4>Combo 5</h4>
+                    <p>R$ 39.99</p>
+                </div>
+                <div class="combo">
+                    <img src="img/combo.png" alt="Combo 6">
+                    <h4>Combo 6</h4>
+                    <p>R$ 39.99</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="resumo-pedido">
+        <div class="item-resumo"></div>
+        <div class="item-soma"></div>
+    </footer>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <header style="display: flex; justify-content: flex-end; align-items: center;">
+                <span id="close-modal" class="close-button">&times;</span>
+            </header>
+            <h2 id="combo-title">Detalhes do Combo</h2>
+            <p id="combo-description">Descrição do combo selecionado.</p>
+            <p id="combo-price">Preço: R$ 39.99</p>
+            <button id="add-to-order">Adicionar ao Pedido</button>
+        </div>
+    </div>
+
+    <script src="js/cardapio.js"></script>
+</body>
+</html>
